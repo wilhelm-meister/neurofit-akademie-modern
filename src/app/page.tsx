@@ -14,9 +14,9 @@ export default function Home() {
             <Link href="/#philosophie" className="hover:text-orange-500 transition py-4">Philosophie</Link>
             
             {/* Therapie Dropdown */}
-            <div className="relative group">
-              <Link href="/therapie" className="hover:text-orange-500 transition py-4">Therapie</Link>
-              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px]">
+            <div className="relative group h-full">
+              <Link href="/therapie" className="hover:text-orange-500 transition py-4 block">Therapie</Link>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px] z-50">
                 <Link href="/therapie/#philosophie" className="block px-4 py-2 hover:bg-slate-50">Philosophie</Link>
                 <Link href="/therapie/#basics" className="block px-4 py-2 hover:bg-slate-50">Basics</Link>
                 <Link href="/therapie/#einsatzgebiete" className="block px-4 py-2 hover:bg-slate-50">Einsatzgebiete</Link>
@@ -24,9 +24,9 @@ export default function Home() {
             </div>
             
             {/* Fortbildung Dropdown */}
-            <div className="relative group">
-              <Link href="/fortbildung" className="hover:text-orange-500 transition py-4">Fortbildung</Link>
-              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px]">
+            <div className="relative group h-full">
+              <Link href="/fortbildung" className="hover:text-orange-500 transition py-4 block">Fortbildung</Link>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px] z-50">
                 <Link href="/fortbildung/#philosophie" className="block px-4 py-2 hover:bg-slate-50">Philosophie</Link>
                 <Link href="/fortbildung/#curriculum" className="block px-4 py-2 hover:bg-slate-50">Curriculum</Link>
                 <Link href="/fortbildung/#kurse" className="block px-4 py-2 hover:bg-slate-50">Kurse</Link>
