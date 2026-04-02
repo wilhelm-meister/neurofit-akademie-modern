@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Therapie() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-20">
 
       {/* Hero Section with Video Background */}
       <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden min-h-[400px] flex items-center">

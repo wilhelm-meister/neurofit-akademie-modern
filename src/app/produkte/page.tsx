@@ -3,7 +3,7 @@ import { siteContent } from '@/data/siteContent';
 
 export default function Produkte() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-20">
 
       <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden min-h-[400px] flex items-center">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
