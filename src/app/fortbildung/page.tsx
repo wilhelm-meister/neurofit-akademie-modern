@@ -22,7 +22,12 @@ export default function Fortbildung() {
       </nav>
 
       {/* Hero */}
-      <section className="pt-24 pb-16 bg-slate-900">
+      <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden min-h-[400px] flex items-center">
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
+          <source src="https://res.cloudinary.com/dargyap8x/video/upload/v1775108170/neurofit/so6ubdjzdkoijl7hotoa.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-slate-900/70"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Fortbildung</h1>
           <p className="text-xl text-orange-400">Ausbildung zum Neurofeedback-Therapeut</p>

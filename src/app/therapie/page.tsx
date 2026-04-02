@@ -19,8 +19,19 @@ export default function Therapie() {
         </div>
       </nav>
 
-      <section className="pt-24 pb-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto px-6">
+      {/* Hero Section with Video Background */}
+      <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden min-h-[400px] flex items-center">
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://res.cloudinary.com/dargyap8x/video/upload/v1775108064/neurofit/xceshfl1jisoiwk41ygu.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-slate-900/70"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Therapie</h1>
           <p className="text-xl text-orange-400">Biofeedback und Neurofeedback</p>
         </div>
