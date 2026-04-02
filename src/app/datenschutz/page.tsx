@@ -3,14 +3,6 @@ import Link from 'next/link';
 export default function Datenschutz() {
   return (
     <div className="min-h-screen bg-white">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-slate-800 flex items-center gap-3">
-            <img src="https://res.cloudinary.com/dargyap8x/image/upload/v1775107548/neurofit/xme9bfptiwcv4gfl8smo.png" alt="NeuroFit" className="h-8" />
-            NeuroFit<span className="text-orange-500">.</span>
-          </Link>
-        </div>
-      </nav>
 
       <section className="pt-32 pb-16 bg-slate-900">
         <div className="max-w-4xl mx-auto px-6">
@@ -47,11 +39,6 @@ export default function Datenschutz() {
         </div>
       </section>
 
-      <footer className="py-12 bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-slate-400">© 2024 NeuroFit GmbH</p>
-        </div>
-      </footer>
     </div>
   );
 }

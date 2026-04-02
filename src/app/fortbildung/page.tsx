@@ -5,21 +5,6 @@ export default function Fortbildung() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-slate-800 flex items-center gap-3">
-            <img src="https://res.cloudinary.com/dargyap8x/image/upload/v1775107548/neurofit/xme9bfptiwcv4gfl8smo.png" alt="NeuroFit" className="h-8" />
-            NeuroFit<span className="text-orange-500">.</span>
-          </Link>
-          <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-            <Link href="/#philosophie" className="hover:text-orange-500 transition">Philosophie</Link>
-            <Link href="/#therapie" className="hover:text-orange-500 transition">Therapie</Link>
-            <Link href="/fortbildung" className="text-orange-500">Fortbildung</Link>
-            <Link href="/#team" className="hover:text-orange-500 transition">Team</Link>
-            <Link href="/#kontakt" className="hover:text-orange-500 transition">Kontakt</Link>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero */}
       <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden min-h-[400px] flex items-center">
@@ -97,13 +82,6 @@ export default function Fortbildung() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-slate-400">
-            © 2024 NeuroFit GmbH - Therapie und Trainingsakademie
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
