@@ -26,7 +26,6 @@ export default function Produkte() {
         </video>
         <div className="absolute inset-0 bg-slate-900/70"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-        <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Produkte & Service</h1>
           <p className="text-xl text-orange-400">Neurofeedback-Geräte und Fernwartung</p>
         </div>
