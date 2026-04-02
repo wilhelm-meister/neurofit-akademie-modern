@@ -11,10 +11,10 @@ export default function Home() {
             NeuroFit<span className="text-orange-500">.</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-            <Link href="#philosophie" className="hover:text-orange-500 transition">Philosophie</Link>
-            <Link href="#therapie" className="hover:text-orange-500 transition">Therapie</Link>
-            <Link href="#fortbildung" className="hover:text-orange-500 transition">Fortbildung</Link>
-            <Link href="#team" className="hover:text-orange-500 transition">Team</Link>
+            <Link href="/fortbildung" className="hover:text-orange-500 transition">Fortbildung</Link>
+            <Link href="/netzwerk" className="hover:text-orange-500 transition">Netzwerk</Link>
+            <Link href="/produkte" className="hover:text-orange-500 transition">Produkte</Link>
+            <Link href="/news" className="hover:text-orange-500 transition">News</Link>
             <Link href="#kontakt" className="hover:text-orange-500 transition">Kontakt</Link>
           </div>
         </div>
