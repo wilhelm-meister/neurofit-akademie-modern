@@ -4,21 +4,39 @@ import { siteContent } from '@/data/siteContent';
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-slate-800 flex items-center gap-3">
+          <Link href="/" className="text-xl font-bold text-slate-800 flex items-center gap-3">
             <img src="https://res.cloudinary.com/dargyap8x/image/upload/v1775107548/neurofit/xme9bfptiwcv4gfl8smo.png" alt="NeuroFit" className="h-8" />
             NeuroFit<span className="text-orange-500">.</span>
-          </div>
-          <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-            <Link href="/#philosophie" className="hover:text-orange-500 transition">Philosophie</Link>
-            <Link href="/therapie" className="hover:text-orange-500 transition">Therapie</Link>
-            <Link href="/fortbildung" className="hover:text-orange-500 transition">Fortbildung</Link>
-            <Link href="/netzwerk" className="hover:text-orange-500 transition">Netzwerk</Link>
-            <Link href="/produkte" className="hover:text-orange-500 transition">Produkte</Link>
-            <Link href="/news" className="hover:text-orange-500 transition">News</Link>
-            <Link href="#kontakt" className="hover:text-orange-500 transition">Kontakt</Link>
+          </Link>
+          <div className="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+            <Link href="/#philosophie" className="hover:text-orange-500 transition py-4">Philosophie</Link>
+            
+            {/* Therapie Dropdown */}
+            <div className="relative group">
+              <Link href="/therapie" className="hover:text-orange-500 transition py-4">Therapie</Link>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px]">
+                <Link href="/therapie/#philosophie" className="block px-4 py-2 hover:bg-slate-50">Philosophie</Link>
+                <Link href="/therapie/#basics" className="block px-4 py-2 hover:bg-slate-50">Basics</Link>
+                <Link href="/therapie/#einsatzgebiete" className="block px-4 py-2 hover:bg-slate-50">Einsatzgebiete</Link>
+              </div>
+            </div>
+            
+            {/* Fortbildung Dropdown */}
+            <div className="relative group">
+              <Link href="/fortbildung" className="hover:text-orange-500 transition py-4">Fortbildung</Link>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px]">
+                <Link href="/fortbildung/#philosophie" className="block px-4 py-2 hover:bg-slate-50">Philosophie</Link>
+                <Link href="/fortbildung/#curriculum" className="block px-4 py-2 hover:bg-slate-50">Curriculum</Link>
+                <Link href="/fortbildung/#kurse" className="block px-4 py-2 hover:bg-slate-50">Kurse</Link>
+              </div>
+            </div>
+            
+            <Link href="/netzwerk" className="hover:text-orange-500 transition py-4">Netzwerk</Link>
+            <Link href="/produkte" className="hover:text-orange-500 transition py-4">Produkte</Link>
+            <Link href="/news" className="hover:text-orange-500 transition py-4">News</Link>
+            <Link href="#kontakt" className="hover:text-orange-500 transition py-4">Kontakt</Link>
           </div>
         </div>
       </nav>
@@ -130,9 +148,9 @@ export default function Home() {
           </div>
           
           <div className="mt-12 text-center">
-            <a href="#" className="inline-block px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-all">
+            <Link href="/fortbildung" className="inline-block px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-all">
               Mehr Infos zur Fortbildung
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -170,6 +188,7 @@ export default function Home() {
               {siteContent.locations.map((loc, i) => (
                 <div key={i} className="mb-6 p-6 bg-slate-50 rounded-xl">
                   <h4 className="font-bold text-slate-800 mb-2">{loc.name}</h4>
+                  <p className="text-slate-600">{loc.address}</p>
                   <p className="text-slate-600">Festnetz: {loc.phone}</p>
                   <p className="text-slate-600">Mobil: {loc.mobile}</p>
                 </div>
