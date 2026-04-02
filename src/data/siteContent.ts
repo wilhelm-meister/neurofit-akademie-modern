@@ -10,7 +10,8 @@ export const siteContent = {
     subtitle: "Therapie und Trainingsakademie GmbH",
     description: "Wir gehen in unserer Behandlung immer der Frage nach: Wie lässt sich das Zusammenspiel von Körper und Geist positiv beeinflussen?",
     cta: "Kontakt aufnehmen",
-    videoPoster: "https://neurofit-akademie.de/wp-content/uploads/2018/06/home-1.jpg"
+    videoUrl: "https://res.cloudinary.com/dargyap8x/video/upload/v1775108184/neurofit/hzqv0dkbrqrr59pgpqml.mp4",
+    imageUrl: "https://res.cloudinary.com/dargyap8x/image/upload/v1775107546/neurofit/npslnwyodtkf4bavzrrq.jpg"
   },
   
   philosophy: {

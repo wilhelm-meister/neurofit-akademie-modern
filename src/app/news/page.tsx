@@ -6,7 +6,8 @@ export default function News() {
     <div className="min-h-screen bg-white">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-slate-800">
+          <Link href="/" className="text-xl font-bold text-slate-800 flex items-center gap-3">
+            <img src="https://res.cloudinary.com/dargyap8x/image/upload/v1775107548/neurofit/xme9bfptiwcv4gfl8smo.png" alt="NeuroFit" className="h-8" />
             NeuroFit<span className="text-orange-500">.</span>
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">

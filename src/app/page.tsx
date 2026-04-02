@@ -7,7 +7,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-slate-800">
+          <div className="text-xl font-bold text-slate-800 flex items-center gap-3">
+            <img src="https://res.cloudinary.com/dargyap8x/image/upload/v1775107548/neurofit/xme9bfptiwcv4gfl8smo.png" alt="NeuroFit" className="h-8" />
             NeuroFit<span className="text-orange-500">.</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
@@ -20,12 +21,19 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section with Video Background */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0 bg-[url('https://neurofit-akademie.de/wp-content/uploads/2018/06/home-1.jpg')] bg-cover bg-center"></div>
-        </div>
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          poster={siteContent.hero.imageUrl}
+        >
+          <source src={siteContent.hero.videoUrl} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-slate-900/70"></div>
         <div className="relative z-10 text-center text-white px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
             NeuroFit
