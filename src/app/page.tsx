@@ -231,11 +231,31 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-slate-400">
-            © 2024 NeuroFit GmbH - Therapie und Trainingsakademie
-          </p>
+      <footer className="py-16 bg-slate-800 text-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h3 className="font-bold text-lg mb-4">Praxis Kempen + Verwaltung</h3>
+              <p className="text-slate-300">Dr. Axel Kowalski, Dipl.-Psych.</p>
+              <p className="text-slate-300">Heinrich-Horten-Str. 35, 47906 Kempen</p>
+              <p className="text-slate-300 mt-2">Telefon: 02152-809 66 42</p>
+              <p className="text-slate-300">Mobil: 0174-950 1404</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-4">Praxis Hagen</h3>
+              <p className="text-slate-300">Christina Erkeling-Köster, M.Sc.</p>
+              <p className="text-slate-300">Bergischer Ring 50, 58095 Hagen</p>
+              <p className="text-slate-300 mt-2">Telefon: 02331-7 87 54 48</p>
+              <p className="text-slate-300">Mobil: 0176-924 432 49</p>
+            </div>
+          </div>
+          <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-slate-400">© 2024 NeuroFit GmbH - Therapie und Trainingsakademie</p>
+            <div className="flex gap-6">
+              <Link href="/impressum" className="text-slate-400 hover:text-orange-400">Impressum</Link>
+              <Link href="/datenschutz" className="text-slate-400 hover:text-orange-400">Datenschutzerklärung</Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
