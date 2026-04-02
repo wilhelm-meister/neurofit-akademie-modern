@@ -192,9 +192,9 @@ export default function Home() {
       </section>
 
       {/* Kontakt Section */}
-      <section id="kontakt" className="py-24 bg-white">
+      <section id="standorte" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">Kontakt</h2>
+          <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">Standorte</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div>
