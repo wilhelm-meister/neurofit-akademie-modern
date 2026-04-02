@@ -8,7 +8,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold text-slate-800 flex items-center gap-3">
             <img src="https://res.cloudinary.com/dargyap8x/image/upload/v1775107548/neurofit/xme9bfptiwcv4gfl8smo.png" alt="NeuroFit" className="h-8" />
-            NeuroFit<span className="text-orange-500">.</span>
+            <span className="text-orange-500">.</span>
           </Link>
           <div className="hidden md:flex gap-6 text-sm font-medium text-slate-600">
             <Link href="/#philosophie" className="hover:text-orange-500 transition py-4">Philosophie</Link>
