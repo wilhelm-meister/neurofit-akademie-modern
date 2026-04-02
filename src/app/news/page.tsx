@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { siteContent } from '@/data/siteContent';
 
 export default function News() {
   return (
@@ -12,21 +11,23 @@ export default function News() {
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
             <Link href="/#philosophie" className="hover:text-orange-500 transition">Philosophie</Link>
-            <Link href="/#therapie" className="hover:text-orange-500 transition">Therapie</Link>
+            <Link href="/therapie" className="hover:text-orange-500 transition">Therapie</Link>
             <Link href="/fortbildung" className="hover:text-orange-500 transition">Fortbildung</Link>
+            <Link href="/netzwerk" className="hover:text-orange-500 transition">Netzwerk</Link>
+            <Link href="/produkte" className="hover:text-orange-500 transition">Produkte</Link>
             <Link href="/news" className="text-orange-500">News</Link>
-            <Link href="/#kontakt" className="hover:text-orange-500 transition">Kontakt</Link>
+            <Link href="#kontakt" className="hover:text-orange-500 transition">Kontakt</Link>
           </div>
         </div>
       </nav>
 
+      {/* Hero with Video */}
       <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden min-h-[400px] flex items-center">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="https://res.cloudinary.com/dargyap8x/video/upload/v1775108093/neurofit/undtchrggcialhry9j9s.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-slate-900/70"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-        <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">News</h1>
           <p className="text-xl text-orange-400">Aktuelles aus der NeuroFit Welt</p>
         </div>
@@ -35,23 +36,14 @@ export default function News() {
       <section className="py-16 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-slate-800 mb-8">Aktuelles</h2>
-          
           <div className="space-y-6">
-            {siteContent.news.articles.map((article, i) => (
-              <a 
-                key={i}
-                href={article.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-6 bg-white rounded-2xl border border-gray-100 hover:border-orange-300 hover:shadow-md transition"
-              >
-                <div className="flex items-center mb-3">
-                  <span className="text-sm text-orange-500 font-medium">{article.date}</span>
-                </div>
-                <h3 className="text-lg font-bold text-slate-800 mb-2">{article.title}</h3>
-                <p className="text-slate-600">{article.excerpt}</p>
-              </a>
-            ))}
+            <div className="block p-6 bg-white rounded-2xl border border-gray-100">
+              <div className="flex items-center mb-3">
+                <span className="text-sm text-orange-500 font-medium">03.06.2021</span>
+              </div>
+              <h3 className="text-lg font-bold text-slate-800 mb-2">Wirkt tDCS in der Behandlung von Aufmerksamkeitsstörungen?</h3>
+              <p className="text-slate-600">An der Uni Magdeburg findet zurzeit eine Forschungsprojekt statt, dass die Wirkung einer elektrischen Stimulation des Gehirns überprüft.</p>
+            </div>
           </div>
         </div>
       </section>
