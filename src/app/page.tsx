@@ -11,15 +11,23 @@ export default function Home() {
             <span className="text-orange-500">.</span>
           </Link>
           <div className="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+            <Link href="/" className="hover:text-orange-500 transition py-4">Home</Link>
             <Link href="/#philosophie" className="hover:text-orange-500 transition py-4">Philosophie</Link>
+            <Link href="/#team" className="hover:text-orange-500 transition py-4">Team</Link>
+            <Link href="/#standorte" className="hover:text-orange-500 transition py-4">Standorte</Link>
+            <Link href="#kontakt" className="hover:text-orange-500 transition py-4">Kontakt</Link>
+            <Link href="/news" className="hover:text-orange-500 transition py-4">News</Link>
+            <Link href="/news/#aktuelles" className="hover:text-orange-500 transition py-4">Aktuelles</Link>
+            <Link href="/news/#archiv" className="hover:text-orange-500 transition py-4">Archiv</Link>
             
-            {/* Therapie Dropdown */}
+            {/* Therapie & Training Dropdown */}
             <div className="relative group h-full">
-              <Link href="/therapie" className="hover:text-orange-500 transition py-4 block">Therapie</Link>
+              <Link href="/therapie" className="hover:text-orange-500 transition py-4 block">Therapie & Training</Link>
               <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px] z-50">
                 <Link href="/therapie/#philosophie" className="block px-4 py-2 hover:bg-slate-50">Philosophie</Link>
                 <Link href="/therapie/#basics" className="block px-4 py-2 hover:bg-slate-50">Basics</Link>
                 <Link href="/therapie/#einsatzgebiete" className="block px-4 py-2 hover:bg-slate-50">Einsatzgebiete</Link>
+                <Link href="/therapie/#flyer" className="block px-4 py-2 hover:bg-slate-50">Flyer</Link>
               </div>
             </div>
             
@@ -33,10 +41,16 @@ export default function Home() {
               </div>
             </div>
             
+            {/* Produkte Dropdown */}
+            <div className="relative group h-full">
+              <Link href="/produkte" className="hover:text-orange-500 transition py-4 block">Produkte</Link>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 hidden group-hover:block min-w-[160px] z-50">
+                <Link href="/produkte/#angebote" className="block px-4 py-2 hover:bg-slate-50">Angebote</Link>
+                <Link href="/produkte/#neuigkeiten" className="block px-4 py-2 hover:bg-slate-50">Neuigkeiten</Link>
+              </div>
+            </div>
+            
             <Link href="/netzwerk" className="hover:text-orange-500 transition py-4">Netzwerk</Link>
-            <Link href="/produkte" className="hover:text-orange-500 transition py-4">Produkte</Link>
-            <Link href="/news" className="hover:text-orange-500 transition py-4">News</Link>
-            <Link href="#kontakt" className="hover:text-orange-500 transition py-4">Kontakt</Link>
           </div>
         </div>
       </nav>
